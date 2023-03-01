@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare a variable called name with the value 'Dane' as a string,
+// then we use an if statement to check is name if strictly equals to 'Mary',
+// if it is then the console will log out the string 'Hi, Mary' if it is not then the console 
+//will log ot the string 'How do you do', which in this case name has 'Dane' for a value therefore the string 'How do you do' will ba the result.
 
 //CODE
 /*
@@ -45,10 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Here we declare a variable called secret without a value assuming the assignment will come later
+// we also have another variable called code with the number value of 123, then we have a conditional statement to check if code is strictly equals to
+// the number 123. if it is (which it is) that value the variable secret will have a value with the string 'super' assigned to it
+//and the value for the variable code will update itself by multiplying itself by 2 so now code has the numeric value of 246.
+//now we have another conditional statement checking if the variable called code is greater than 250 (which is not) and if it is
+//then the variable called secret will be updated to the string value 'duper'. then finally we console log the variable secret which will then return the string 'super'. 
 
 //CODE
 /*
@@ -70,10 +72,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// the isStudent variable is declared with the boolean value of true, another variable called age is declared with the numeric value of 34
+// and a third variable called zip is declared with the value of 55407. now we have a few conditionals, the first one checks if isStudent is
+// true AND zip number greater than 80000 the console will log the string 'you're a studenton the west coast!', even though isStudent is true zip is not greater than
+//80000 therefore this block of code gets skipped to the next conditional. if isStudent is false OR age is less than 30 then tho console will log 
+//the string 'what are your hobbies?', you only need one of these conditionals to be true but since both are false this code block also gets skipped and go to the next one.
+//next we are only checking if isStudent is true and if it is the the console log will log the string 'Welcome to prime' and in this case it is true so this is
+//the code that will execute and stopping there. if none of these conditionals met requirements then the last else statement would have ran as a default.
 
 //CODE
 /*
@@ -130,8 +135,8 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';
-let colorTwo = 'blue';
+FIX - let colorOne = 'red'; - colorOne should be blue as per instructions.
+FIX - let colorTwo = 'blue'; - colorTwo should be red as per instructions.
 let mix = true;
 
 if (mix === true) {
@@ -147,7 +152,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
-if (temp > 39 || time >= 4) {
+FIX - if (temp > 39 || time >= 4) { - instructions says if temp is higher than 39 and if time is greater or equal to  4 and code has an OR operater, it should look like this:
+  if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -160,10 +166,22 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {
-  console.log('no entry');
+FIX - if(minAge <= age) { - instructions states if age is greater than or equals to minAge so it should look like this:
+  if(age >= minAge) {
+ FIX - console.log('no entry');
 } else {
-  console.log('enter');
+ FIX - console.log('enter'); - both console logs should be switched in order to get the desired outcome. code can be re-written like this:
 }
+
+let age = 21;
+const minAge = 21;
+
+if(age >= minAge) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
+
+
 */
 
